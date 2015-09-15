@@ -11,10 +11,22 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
 
-    <TextView
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/morningkit_ad_button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Show Morning Kit Ad"
+        android:onClick="onMorningKitAdButtonClick"/>
+
+    <Button
+        android:id="@+id/newskit_ad_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/morningkit_ad_button"
+        android:layout_marginTop="15dp"
+        android:text="Show News Kit Ad"
+        android:onClick="onNewsKitAdButtonClick"/>
 </RelativeLayout>

@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.yooiistudios.fullscreenad.FullscreenAdUtils;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -48,5 +50,13 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onMorningKitAdButtonClick(View view) {
+        FullscreenAdUtils.showMorningKitAd(this);
+    }
+
+    public void onNewsKitAdButtonClick(View view) {
+        FullscreenAdUtils.showNewsKitAd(this);
     }
 }
